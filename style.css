@@ -139,6 +139,9 @@ body{
     align-items: center;
     gap: 20px;
 }
+.hot-deals-text h1 span{
+    color: rgb(229, 84, 115);
+}
 .hot-deals-text button{
     width: 155px;
     height: 64px;
