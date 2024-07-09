@@ -6,14 +6,13 @@
     box-sizing: border-box;
 }
 body{
-    max-width: 1440px;
     font-family: "Lato", sans-serif;
-    margin: 0 auto;
 }
 #header{
-    width: 1440px;
+    max-width: 1440px;
     height: 650px;
     background-color: rgba(229, 84, 115, 0.1);
+    margin: auto;
 }
 .banner{
     width: 90%;
@@ -53,11 +52,9 @@ body{
     height: 650px;
 }
 .our-feature-section{
-    width: 1100px;
+    max-width: 1100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 100px auto;
     text-align: center;
 }
@@ -73,41 +70,38 @@ body{
     font-weight: 400;
     margin-bottom: 30px;
 }
+.our-feature-images{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.our-feature-images div p{
+    font-size: 26px;
+}
 #img1{
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 350px;
     border-radius: 300px 300px 0px 0px;
     background: rgba(167, 33, 98, 0.15);
     padding: 20px;
 }
 #img2{
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 350px;
     border-radius: 300px 300px 0px 0px;
     background: rgba(5, 151, 160, 0.15);
     padding: 20px;
 }
 #img3{
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 350px;
     border-radius: 300px 300px 0px 0px;
     background: rgba(71, 125, 17, 0.15);
     padding: 20px;
 }
-.our-feature-img-name{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-    font-size: 24px;
-    font-weight: 700;
-}
-.our-feature-img-name p{
-    padding: 3px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.685);
-}
 .support-section{
-    width: 1100px;
+    max-width: 1100px;
     height: 320px;
     margin: auto;
     display: flex;
@@ -122,9 +116,9 @@ body{
     border: 2px dashed rgba(0, 0, 0, 0.28);
 }
 .hot-deals-section{
-    width: 1440px;
+    max-width: 1440px;
     height: 500px;
-    margin: 100px 0;
+    margin: 100px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -155,7 +149,7 @@ body{
 }
 
 .flower-images-section{
-    width: 1100px;
+    max-width: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,7 +178,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 10px;
 }
 .flower-images img{
@@ -193,7 +187,7 @@ body{
 }
 
 .last-container{
-    width: 1100px;
+    max-width: 1100px;
     height: 400px;
     margin: 100px auto;
     display: flex;
@@ -233,7 +227,7 @@ body{
 }
 
 .footer{
-    width: 1440px;
+    max-width: 1440px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -243,6 +237,7 @@ body{
     gap: 15px;
     background: rgb(17, 16, 16);
     color: white;
+    margin: auto;
 }
 .footer h1{
     font-size: 48px;
@@ -263,6 +258,15 @@ body{
 }
 
 
+@media screen and (max-width: 960px){
+    #img1, #img2, #img3{
+        width: 250px;
+        height: 270px;
+    }
+    .our-feature-images div p{
+        font-size: 20px;
+    }
+}
 
 
 
